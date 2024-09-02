@@ -1,7 +1,7 @@
 language: java
 
 jdk:
-  - openjdk8
+  - openjdk11
 
 before_script:
   - chmod +x gradlew
@@ -19,7 +19,6 @@ jobs:
     - stage: test
       script:
         - ./gradlew test
-        - ./gradlew jacocoReport  
 
 notifications:
   email:
